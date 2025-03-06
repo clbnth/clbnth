@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Thể thao</title>
-		<link href="styles.css" rel="stylesheet" type="text/css">
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thể thao</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        /* CSS để ảnh và video có thể co dãn trên điện thoại */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2></h2>			
+    </div>
+    <div class="slogan">
+        <div class="row">
+            <div class="block_3">
+                <h3>Năng động</h3>
+                <p class="text-content">Hoạt động năng nổ và hiệu quả</p>
+            </div>
+            <div class="block_3">
+                <h3>Đam mê</h3>
+                <p class="text-content">Cháy hết mình trong các cuộc chơi</p>
+            </div>
+            <div class="block_3">
+                <h3>Tỏa sáng</h3>
+                <p class="text-content">Giành những giải thưởng cao nhất</p>
+            </div>
+        </div>
+    </div>
 
-	<body>
-		<div class="banner">
-		<h2>CLB ngoại khóa trường THPT Nam Tiền Hải</h2>			
-		</div>
-		<div class="slogan">
-			<div class="row">
-				<div class="block_3">
-					<h3>Năng động</h3>
-					<p class="text-content">Hoạt động năng nổ và hiệu quả</p>
-				</div>
-				<div class="block_3">
-					<h3>Đam mê</h3>
-					<p class="text-content">Cháy hết mình trong các cuộc chơi</p>
-				</div>
-				<div class="block_3">
-					<h3>Tỏa sáng</h3>
-					<p class="text-content">Giành những giải thưởng cao nhất</p>
-				</div>
-			</div>
-		</div>
-		
-		<div>
-			<h2>Câu lạc bộ thể thao trường THPT Nam Tiền Hải</h2>  
-    		<ol type="1" style="font-size: 16pt; line-height: 130%;">
-				<a href="#"><li>Bóng đá</li></a>
-      			<a href="#"><li>Bóng chuyền</li></a>
-      			<a href="#"><li>Bóng rổ</li></a>
-      			<a href="#"><li>Cầu lông</li></a>
-    		</ol>   
-    		<h2>Tin tức thể thao mới nhất</h2>
-    		<p>Đánh bại Romania 2-0 ở lượt trận thứ 2, đội tuyển Bỉ đã xua tan nỗi lo lắng khi tạm thời vươn lên vị trí thứ 2 bảng E, cũng như chạm 1 tay vào tấm vé vào vòng 1/8. Trong trận đấu đó, đội bóng của Kevin de Bruyne đã chứng tỏ được bản lĩnh khi có thế trận áp đảo trước đối thủ, kiểm soát bóng 55% và có tổng cộng 14 pha dứt điểm trong cả trận.</p>	
-    		<img src="thethao.jpg" alt="Hoạt động của các CLB thể thao"> 		
-			<p>Ở lượt trận cuối, đội tuyển Bỉ sẽ có cuộc chạm trán với Ukraine, đội bóng vừa có chiến thắng quan trọng trước Slovakia với tỷ số 2-1. Đội bóng của HLV Serhiy Rebrov không chơi hay hơn đối thủ, nhưng biết tận dụng cơ hội tốt hơn.</p> 
-			<iframe width="560" height="315" src="quoc_ca.mp4" title="Quốc ca" autoplay;></iframe>
-		</div>
-		
-		<div class="footer">
-			<div class="row">
-				<div class="block_3">
-					<h3>Liên hệ</h3> 
-					<p>Mọi chi tiết xin liên hệ trường THPT Nam Tiền Hải<br/>
-					ĐC: xã Nam Trung - huyện Tiền Hải - tỉnh Thái Bình.</p>
-				</div>
-				<div class="block_3">
-					<h3>Bản quyền</h3> 
-					<p>Bản quyền thuộc về trường THPT Nam Tiền Hải<br/>
-					Huyện Tiền Hải - Tỉnh Thái Bình</p>
-				</div>
-				<div class="block_3">
-					<h3>Liên kết</h3> 
-					<p>
-					<a href="index.html">Trang chủ</a><br/>
-					<a href="nghethuat.html">Trang Nghệ thuật</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</body>
+    <div>
+        <h2>Câu lạc bộ thể thao trường THPT Nam Tiền Hải</h2>  
+        <ol type="1" style="font-size: 16pt; line-height: 130%;">
+            <a href="#"><li>Bóng đá</li></a>
+            <a href="#"><li>Bóng chuyền</li></a>
+            <a href="#"><li>Bóng rổ</li></a>
+            <a href="#"><li>Cầu lông</li></a>
+        </ol>
+        <h2>Tin tức thể thao mới nhất</h2>
+        <p>Câu lạc bộ thể thao của trường THPT Nam Tiền Hải là nơi giao lưu, rèn luyện sức khỏe và phát triển kỹ năng thể thao cho học sinh. Tại đây, các em được tham gia vào nhiều môn thể thao hấp dẫn như bóng đá, bóng chuyền, cầu lông, và bóng rổ. Câu lạc bộ không chỉ giúp học sinh nâng cao thể lực mà còn xây dựng tinh thần đồng đội và sự đoàn kết giữa các thành viên. Các hoạt động thể thao thường xuyên được tổ chức, tạo cơ hội cho học sinh thi đấu, giao lưu và học hỏi lẫn nhau. Nhờ đó, câu lạc bộ trở thành một phần không thể thiếu trong đời sống học sinh, góp phần tạo ra môi trường học tập tích cực và lành mạnh. 🏆⚽️🏀🌟
+        </p>
+        <img src="https://i.imgur.com/64fMlGQ.jpeg" alt="Hoạt động của các CLB thể thao"> 
+        <p>Câu lạc bộ thể thao của trường THPT Nam Tiền Hải được thành lập với mục tiêu khuyến khích học sinh tham gia vào các hoạt động thể dục thể thao, từ đó nâng cao sức khỏe và tinh thần. Câu lạc bộ tổ chức các buổi tập luyện định kỳ vào các buổi chiều thứ Ba và thứ Năm, dưới sự hướng dẫn của các giáo viên thể dục dày dạn kinh nghiệm. 
+
+        Ngoài việc luyện tập, câu lạc bộ còn tổ chức các giải đấu nội bộ thường niên, thu hút sự tham gia của đông đảo học sinh với nhiều phần thưởng hấp dẫn. Các thành viên trong câu lạc bộ cũng có cơ hội tham gia các giải thể thao cấp huyện và tỉnh, góp phần tạo nên danh tiếng cho trường. 
+
+        Câu lạc bộ không chỉ là nơi để học sinh thể hiện tài năng thể thao mà còn là môi trường rèn luyện tính kỷ luật, trách nhiệm và sự tự tin. Tham gia vào câu lạc bộ, các em còn có dịp kết bạn, xây dựng mối quan hệ tốt đẹp và tạo ra những kỷ niệm đáng nhớ trong thời học sinh. 🏐🏅🌈🤝
+        </p> 
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/HdMKaxDNeCQ" title="Quốc ca" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="block_3">
+                <h3>Liên hệ</h3> 
+                <p>Mọi chi tiết xin liên hệ trường THPT Nam Tiền Hải<br/>
+                ĐC: xã Nam Trung - huyện Tiền Hải - tỉnh Thái Bình.</p>
+            </div>
+            <div class="block_3">
+                <h3>Bản quyền</h3> 
+                <p>Bản quyền thuộc về trường THPT Nam Tiền Hải<br/>
+                Huyện Tiền Hải - Tỉnh Thái Bình</p>
+            </div>
+            <div class="block_3">
+                <h3>Liên kết</h3> 
+                <p>
+                <a href="index.html">Trang chủ</a><br/>
+                <a href="nghethuat.html">Trang Nghệ thuật</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-
